@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html>
+    
+    <head>
+        <title>Contact Me</title>
+        
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="author" content="Angelo Pellegrino">
+        
+        <link rel="stylesheet" href="../styles/style.css">
+        <script src="http://ajax.googleapis.com/ajax/libs/jquery/2.0.0/jquery.min.js">
+        </script>
+        <script src="http://code.jquery.com/jquery-1.4.2.min.js"></script>
+    </head>
+    <body>
+        
+        <div id="top"></div>
+        
+        <header>
+            <img id="workimg" src="../images/work.jpg" alt='coding image'>
+            <h1>Contact Me</h1>
+            
+            <script type="text/javascript">
+	$(document).ready(function(){
+		$('#send_message').click(function(e){
+			e.preventDefault();
+			var error = false;
+			var name = $('#name').val();
+			var email = $('#email').val();
+			var subject = $('#subject').val();
+			var message = $('#message').val();
+			if(name.length == 0){
+				var error = true;
+				$('#name_error').fadeIn(500);
+			} else {
+				$('#name_error').fadeOut(500);
+			}
+			if(email.length == 0 || email.indexOf('@') == '-1'){
+				var error = true;
+				$('#email_error').fadeIn(500);
+			} else {
+				$('#email_error').fadeOut(500);
+			}
+			if(subject.length == 0){
+				var error = true;
+				$('#subject_error').fadeIn(500);
+			} else {
+				$('#subject_error').fadeOut(500);
+			}
+			if(message.length == 0){
+				var error = true;
+				$('#message_error').fadeIn(500);
+			} else {
+				$('#message_error').fadeOut(500);
+			} if(error == false){
+				$('#send_message').attr({'disabled' : 'true', 'value' : 'Sending...' });
+				$.post("send_email.php", $("#contact_form").serialize(),function(result){
+					if(result == 'sent'){
+						$('#cf_submit_p').remove();
+						$('#mail_success').fadeIn(500);
+					} else {
+						$('#mail_fail').fadeIn(500);
+						$('#send_message').removeAttr('disabled').attr('value', 'Send Message');
+					}
+				});
+			}
+		});
+	});
+</script>
+            
+        </header>
+        
+        <nav>
+            <a href="../index.html">Home</a> |
+            <a href="education.html">Education</a> |
+            <a href="skills.html">Skills</a> |
+            <a href="work.html">Work Experience</a> |
+            <a href="projects.html">Projects</a> |
+            <a href="hobbies.html">Hobbies</a> |
+            <a href="contact.html">Contact Me</a>
+        </nav>
+        
+       
+        <hr><br /><br />
+		<section>
+		<p>
+			
+                    If you have any questions or comments please leave me a
+                    message, and I will be sure to respond to your email. if you
+                    would like to call me please contact me at 888-888-8888. 
+		</p><br />	
+		
+    <div id="contact_form_holder">
+        <form action="contact.html" method="post" id="contact_form">
+            <div>            
+            </div>
+            NAME:<div id="name_error" class="error"><img src="../images/error.png" alt="error" /> 
+                We don't talk to strangers.</div>
+            <div><input class="contact_name" type="text" name="name" id="name" /></div>
+            EMAIL:<div id="email_error" class="error"><img src="../images/error.png" alt="error" /> 
+                You don't want us to answer?</div>
+            <div><input class="contact_email" type="text" name="email" id="email" /></div>
+            SUBJECT:<div id="subject_error" class="error"><img src="../images/error.png" alt="error" /> 
+                What's the purpose of this email?</div>
+            <div><input class="contact_subject" type="text" name="subject" id="subject" /></div>
+            MESSAGE:<div id="message_error" class="error"><img src="../images/error.png" alt="error" />
+                Forgot why you came here?</div>
+            <div><textarea class="contact_message" name="message" id="message"></textarea></div>
+            <div id="mail_success" class="success"><img src="../images/success.png" alt=" success"/> 
+                Thank you. The mailman is on his way.</div>
+            <div id="mail_fail" class="error"><img src="../images/error.png" alt="error" />
+                Sorry, we don't know what happened. Please try again later.</div>
+        
+            <div id="cf_submit_p">
+                <input class="submit" type="submit" id="send_message" value="Send Message">
+            </div>
+        </form>
+    </div>
+          
+                <br /><br />
+        </section>
+        
+        <a href="top" class="back-to-top">Back to Top</a>
+        
+        <footer>
+          Angelo Pellegrino &copy; 2014 
+        </footer>
+        <!-- back to top script -->
+        <script>
+            jQuery(document).ready(function() {
+                var offset = 220;
+                var duration = 500;
+            jQuery(window).scroll(function() {
+                if (jQuery(this).scrollTop() > offset) {
+                    jQuery('.back-to-top').fadeIn(duration);
+                } else {
+            jQuery('.back-to-top').fadeOut(duration);
+                }
+        });
+    
+            jQuery('.back-to-top').click(function(event) {
+                event.preventDefault();
+            jQuery('html, body').animate({scrollTop: 0}, duration);
+                return false;
+                });
+         });
+        </script>
+        
+    </body>
+</html>
+
+

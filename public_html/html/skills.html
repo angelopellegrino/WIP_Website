@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+    
+    <head>
+        <title>My Skills</title>
+        
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="author" content="Angelo Pellegrino">
+        
+        <link rel="stylesheet" href="../styles/style.css">
+        <script src="http://ajax.googleapis.com/ajax/libs/jquery/2.0.0/jquery.min.js">
+        </script>
+
+    </head>
+    <body>
+        
+        <div id="top"></div>
+        
+        <header>
+            <img id="workimg" src="../images/work.jpg" alt='coding image'>
+            <h1>My Skillset</h1>
+        </header>
+        
+        <nav>
+            <a href="../index.html">Home</a> |
+            <a href="education.html">Education</a> |
+            <a href="skills.html">Skills</a> |
+            <a href="work.html">Work Experience</a> |
+            <a href="projects.html">Projects</a> |
+            <a href="hobbies.html">Hobbies</a> |
+            <a href="contact.html">Contact Me</a>
+        </nav>
+        
+       
+        <hr><br /><br />
+		<section>
+		<p>
+                    My skillset specializes primarily with programming where I
+                    have learned to use various IDEs, several computer languages
+                    , and even a game engine. I also have experience with web
+                    development programs such as Adobe Dreamweaver and Microsoft
+                    Expression web, and have even learned how to use gimp for
+                    graphics. On top of that I am proficient with computer
+                    hardware and have a strong knowledge of networking. 
+		</p><br />	
+		                
+		<h3> Software</h3><br />
+			 <ul>
+                            <li>Adobe Dreamweaver</li>
+                            <li>Adobe Flash</li>
+                            <li>Gimp</li>
+                            <li>Microsoft Office 2010 &amp; 365</li>
+                            <li>Microsoft Expression Web</li>
+                            <li>Netbeans IDE</li>
+                            <li>Unity 3D Game Engine</li>
+                            <li>VirtualBox</li>
+                            <li>Visual Studio 2013</li>   
+			</ul><br />
+                        
+		<h3> Hardware</h3><br />
+                        <ul>
+                            <li>Networking Hardware</li>
+                            <li>PC Hardware &amp; peripherals</li>
+                            <li>Video Surveillance Systems</li>
+			</ul><br />
+                        
+                <h3> Computer Languages</h3><br />
+                        <ul>
+                            <li> Assembly Language</li>
+                            <li>C#</li>
+                            <li>Cobol</li>
+                            <li>CSS3</li>
+                            <li>HTML5</li>
+                            <li>Java &amp; Javascript</li>
+                            <li>Visual Basic</li>
+                        </ul><br /><br /><br />        
+        </section>
+        
+        <a href="top" class="back-to-top">Back to Top</a>
+        
+        <footer>
+          Angelo Pellegrino &copy; 2014 
+        </footer>
+        <!-- back to top script -->
+        <script>
+            jQuery(document).ready(function() {
+                var offset = 220;
+                var duration = 500;
+            jQuery(window).scroll(function() {
+                if (jQuery(this).scrollTop() > offset) {
+                    jQuery('.back-to-top').fadeIn(duration);
+                } else {
+            jQuery('.back-to-top').fadeOut(duration);
+                }
+        });
+    
+            jQuery('.back-to-top').click(function(event) {
+                event.preventDefault();
+            jQuery('html, body').animate({scrollTop: 0}, duration);
+                return false;
+                });
+         });
+        </script>
+        
+    </body>
+</html>
+
+

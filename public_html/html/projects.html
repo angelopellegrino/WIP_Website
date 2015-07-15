@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+    
+    <head>
+        <title>Projects</title>
+        
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="author" content="Angelo Pellegrino">
+        
+        <link rel="stylesheet" href="../styles/style.css">
+        <script src="http://ajax.googleapis.com/ajax/libs/jquery/2.0.0/jquery.min.js">
+        </script>
+
+    </head>
+    <body>
+        
+        <div id="top"></div>
+        
+        <header>
+            <img id="workimg" src="../images/work.jpg" alt='coding image'>
+            <h1>Projects</h1>
+        </header>
+        
+        <nav>
+            <a href="../index.html">Home</a> |
+            <a href="education.html">Education</a> |
+            <a href="skills.html">Skills</a> |
+            <a href="work.html">Work Experience</a> |
+            <a href="projects.html">Projects</a> |
+            <a href="hobbies.html">Hobbies</a> |
+            <a href="contact.html">Contact Me</a>
+        </nav>
+        
+       
+        <hr><br /><br />
+		<section>
+		<p>
+			
+                I currently have no active projects.
+		</p><br />	
+        </section>
+        
+        <a href="top" class="back-to-top">Back to Top</a>
+        
+        <footer>
+          Angelo Pellegrino &copy; 2014 
+        </footer>
+        <!-- back to top script -->
+        <script>
+            jQuery(document).ready(function() {
+                var offset = 220;
+                var duration = 500;
+            jQuery(window).scroll(function() {
+                if (jQuery(this).scrollTop() > offset) {
+                    jQuery('.back-to-top').fadeIn(duration);
+                } else {
+            jQuery('.back-to-top').fadeOut(duration);
+                }
+        });
+    
+            jQuery('.back-to-top').click(function(event) {
+                event.preventDefault();
+            jQuery('html, body').animate({scrollTop: 0}, duration);
+                return false;
+                });
+         });
+        </script>
+        
+    </body>
+</html>
+
+

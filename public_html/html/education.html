@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+    
+    <head>
+        <title>My Education</title>
+        
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="author" content="Angelo Pellegrino">
+        
+        <link rel="stylesheet" href="../styles/style.css">
+        <script src="http://ajax.googleapis.com/ajax/libs/jquery/2.0.0/jquery.min.js">
+        </script>
+
+    </head>
+    <body>
+        
+        <div id="top"></div>
+        
+        <header>
+            <img src="../images/post.jpg" alt='LIU Post'>
+            <h1>My Education</h1>
+        </header>
+        
+        <nav>
+            
+            <a href="../index.html">Home</a> |
+            <a href="education.html">Education</a> |
+            <a href="skills.html">Skills</a> |
+            <a href="work.html">Work Experience</a> |
+            <a href="projects.html">Projects</a> |
+            <a href="hobbies.html">Hobbies</a> |
+            <a href="contact.html">Contact Me</a>
+            
+        </nav>
+
+        
+        <hr><br /><br />
+        <section>
+            
+       
+                <p>My education at LIU Post started off on the fall
+                of 2011 where I learned my first language, Visual Basic. Visual
+                Basic was the foundation of all of my programming courses; it's
+                the language were I first learned about if statements, Arrays,
+                and other structures in programming. Since then, I've taken
+                various Computer Science related courses; ranging from Analysis &
+                Logical Design were we learned about different prototyping
+                models as well as use cases, to Special Topics in network
+                Security, where we learned about various network solutions
+                such as a network appliances and programs such as Snort. I will
+		be graduating in the Spring of 2015 with a Bachelor of Science in
+		Computer Science.</p><br />
+            
+            <h3> Related Course Work</h3><br />
+            
+                <ul>
+                    <li>Intro to Computers and Programming (CS 101)</li>
+                    <li>Information Technology and Services (IT 151)</li>
+                    <li>GUI Programing (CS 106)</li>
+                    <li>Computer Program Development I (CS 111)</li>
+                    <li>Computer Program Development II (CS 116)</li>
+                    <li>Introduction to Game Design (CS 127)</li>
+                    <li>Analysis and Logical Design (CS 133)</li>
+                    <li>Networks and Information Technology (CS 136)</li>
+                    <li>Tech Communications: Systems and Software Documentation
+                       (CS 255)</li>
+                    <li>Computer Architecture and Operating Systems (CS 261)</li>
+                    <li>Advance Game Programing (CS 271)</li>
+                    <li>Special Topic in Network Security (Tel 283)</li>
+                </ul>
+                <br /><br />
+                
+        </section>
+        
+        <a href="top" class="back-to-top">Back to Top</a>
+        
+        <footer>
+          Angelo Pellegrino &copy; 2014 
+        </footer>
+        <!-- back to top script -->
+        <script>
+            jQuery(document).ready(function() {
+                var offset = 220;
+                var duration = 500;
+            jQuery(window).scroll(function() {
+                if (jQuery(this).scrollTop() > offset) {
+                    jQuery('.back-to-top').fadeIn(duration);
+                } else {
+            jQuery('.back-to-top').fadeOut(duration);
+                }
+        });
+    
+            jQuery('.back-to-top').click(function(event) {
+                event.preventDefault();
+            jQuery('html, body').animate({scrollTop: 0}, duration);
+                return false;
+                });
+         });
+        </script>
+        
+    </body>
+</html>

@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html>
+    
+    <head>
+        <title>Work Experience</title>
+        
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="author" content="Angelo Pellegrino">
+        
+        <link rel="stylesheet" href="../styles/style.css">
+        <script src="http://ajax.googleapis.com/ajax/libs/jquery/2.0.0/jquery.min.js">
+        </script>
+
+    </head>
+    <body>
+        
+        <div id="top"></div>
+        
+        <header>
+            <img id="workimg" src="../images/work.jpg" alt='coding image'>
+            <h1>Work Experience</h1>
+        </header>
+        
+        <nav>
+            <a href="../index.html">Home</a> |
+            <a href="education.html">Education</a> |
+            <a href="skills.html">Skills</a> |
+            <a href="work.html">Work Experience</a> |
+            <a href="projects.html">Projects</a> |
+            <a href="hobbies.html">Hobbies</a> |
+            <a href="contact.html">Contact Me</a>
+        </nav>
+        
+       
+        <hr><br /><br />
+		<section>
+		<p>
+			
+                    I started a career in technology at the age of 15 under the
+                    guidance of my father's friend Al. He had brought me aboard 
+                    to his company Total Computer Group, where I was exposed to 
+                    quality assurance. This was the first step in the foundation
+                    of my work ethic. Quality assurance taught me many things.
+                    For one, I learned how to look for problems and how to
+                    report them. You had to take steps to break the program and 
+                    potentially use it in ways that it was not designed for.
+                    after you found a problem, it was important to document the 
+                    steps taken to recreate the problem. At the time I had no
+                    programming experience so there would be no actual debugging
+                    done by me. In the end, I found well over 100 bugs. 
+		</p><br />	
+		
+		<p>
+                    My next major breakthrough was with the I.T. Department at
+                    NIF Group Inc, where I was taken under their wing in the
+                    summer of 2012. At first they had assigned me small tasks,
+                    such as updating images on a website and working on excel
+                    spreadsheets. Eventually they presented me with bigger
+                    projects to handle. Their NYC office was moving into a new
+                    building and I was given the task to find a new ISP and new 
+                    networking equipment for the new location. Working at NIF
+                    taught me that things needed to be completed with high
+                    accuracy, and in an orderly and timely manner. Most
+                    importantly I learned that documentation was key.
+		</p><br />
+                
+		<h3> Total Computer Group, Melville, NY<br />
+                     Quality Assurance Specialist - Summer 08/09</h3><br />
+			 <ul>
+                            <li> Analyzed Software for various glitches and
+                                 errors.</li>
+                            <li> Report glitches and errors within the 
+                                 programming.</li>
+			</ul><br />
+		<h3> Brothers Ravioli, Howard Beach, NY<br />
+                     Website Administrator - 2012 to Present</h3><br />
+                        <ul>
+                            <li> Facilitate maintenance of website.</li>
+                            <li> Ensure data is up to date.</li>
+			</ul><br />	
+		<h3> NIF Group Inc., Manhasset, NY<br />
+			 I.T. Services - Summer 2012</h3><br />
+			<ul>
+                            <li> Assisted with help desk duties.</li>
+                            <li> Researched and analyzed various network
+                                solutions.</li>	
+			</ul><br />
+		<h3> IMX  Medical Management Services, Malvern, PA<br />
+			 Data Entry - 2012 to Present</h3><br />
+			<ul>
+                            <li> Write up referrals for Independent Medical
+                             Evaluations. </li>
+                            <li> Prepare records for scanning.</li>
+                            <li> Submit Files to web portal.</li>	
+			</ul> 
+	 
+                <br /><br />
+        </section>
+        
+        <a href="top" class="back-to-top">Back to Top</a>
+        
+        <footer>
+          Angelo Pellegrino &copy; 2014 
+        </footer>
+        <!-- back to top script -->
+        <script>
+            jQuery(document).ready(function() {
+                var offset = 220;
+                var duration = 500;
+            jQuery(window).scroll(function() {
+                if (jQuery(this).scrollTop() > offset) {
+                    jQuery('.back-to-top').fadeIn(duration);
+                } else {
+            jQuery('.back-to-top').fadeOut(duration);
+                }
+        });
+    
+            jQuery('.back-to-top').click(function(event) {
+                event.preventDefault();
+            jQuery('html, body').animate({scrollTop: 0}, duration);
+                return false;
+                });
+         });
+        </script>
+        
+    </body>
+</html>
+

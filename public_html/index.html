@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+    
+    <head>
+        <title>Angelo Pellegrino</title>
+        
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="I'm Angelo Pellegrino, and this is a 
+              website that I built to showcase my skill and ablitites within
+              my area of study... Computer Science. here you will find my resume
+              as well as my previous work experience.">
+        <meta name="keywords" content="Angelo, Pellegrino, resume, computer,
+              science, information, technology, work, experience, html5, Css3,
+              java, c, #, sharp, visual, basic, vb">
+        <meta name="author" content="Angelo Pellegrino">
+        
+        <link rel="stylesheet" href="styles/style.css">
+        <script src="http://ajax.googleapis.com/ajax/libs/jquery/2.0.0/jquery.min.js">
+        </script>
+
+    </head>
+    <body>
+        
+        <div id="top"></div>
+        
+        <header>
+            <img id="circle" src="images/pellegrino.jpg" alt='Angelo Pellegrino'>
+            <h1>About Me</h1>
+        </header>
+        
+        <nav>
+            <a href="index.html">Home</a> |
+            <a href="html/education.html">Education</a> |
+            <a href="html/skills.html">Skills</a> |
+            <a href="html/work.html">Work Experience</a> |
+            <a href="html/projects.html">Projects</a> |
+            <a href="html/hobbies.html">Hobbies</a> |
+            <a href="html/contact.html">Contact Me</a>
+        </nav>
+        
+        
+        <hr><br /><br />
+        <section>
+            <p> Technology is one of the most significant
+                aspects our society uses today and it has always been one of my
+                interests. Whether it was working with software, exploring new
+                technologies, or fixing and building computers; computer
+                technology is something that I have always been passionate
+                about. However there was one specific field that had
+                cached my attention the most… software development. </p><br />
+            
+            <p> Software Development first caught my attention when
+                I met a friend of my father’s named Al. Al had his own company
+                named Total Computer Group where they developed software for
+                law enforcement. I was fascinated by how he created his own
+                program and was successful. This encounter eventually led to my
+                passion for computers. I began to tinker with software at the
+                age of 13 and by 14 I had created my very first game server for
+                Counter Strike using a program known as SRCDS. SRCDS is a
+                program where you essentially run a virtual battlefield from
+                games based on Valve’s source engine. Not only did I have to
+                make configurations and install modifications, but I also had
+                to learn how to network, more specifically port forwarding.
+                I became skilled enough that I was able to run 3 servers at once.
+                Eventually I began to seek an education in computer science at
+                LIU Post.
+            </p>
+            <br /><br />
+         
+        </section>
+        
+        <a href="top" class="back-to-top">Back to Top</a>
+        
+        <footer>
+          Angelo Pellegrino &copy; 2014 
+        </footer>
+        <!-- back to top script -->
+        <script>
+            $(document).ready(function() {
+                var offset = 220;
+                var duration = 500;
+            $(window).scroll(function() {
+                if ($(this).scrollTop() > offset) {
+                    $('.back-to-top').fadeIn(duration);
+                } else {
+            $('.back-to-top').fadeOut(duration);
+                }
+        });
+    
+            $('.back-to-top').click(function(event) {
+                event.preventDefault();
+            $('html, body').animate({scrollTop: 0}, duration);
+                return false;
+                });
+         });
+        </script>
+        
+    </body>
+</html>
